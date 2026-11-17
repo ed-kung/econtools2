@@ -1,0 +1,42 @@
+
+\documentclass[11pt]{article}
+\usepackage[utf8]{inputenc}
+\usepackage[margin=1in]{geometry}
+\usepackage{pgfplots}
+\pgfplotsset{compat=1.11}
+\usepgfplotslibrary{fillbetween}
+\usetikzlibrary{patterns}
+\usetikzlibrary{arrows.meta}
+\usetikzlibrary{positioning}
+\usetikzlibrary{automata}
+\usepackage{amsmath}
+\usepackage{enumerate}
+\usepackage{setspace}
+\usepackage{array}
+\usepackage{multirow}
+\usepackage{tabularx}
+\usepackage{booktabs}
+\usepackage{xfp}
+\usepackage[shortlabels]{enumitem}
+\usepackage[parfill]{parskip}
+\usepackage{pifont}
+\usepackage{wasysym}
+\usepackage{amssymb}
+\usepackage{hyperref}
+\linespread{1}
+\setlist[enumerate]{topsep=0.5ex, itemsep=0.5ex}
+\renewcommand{\arraystretch}{1.15}
+\newcolumntype{C}[1]{>{\centering\let\newline\\\arraybackslash\hspace{0pt}}m{#1}}
+\newcommand{\fb}{\rule{2cm}{0.15mm} }
+\setlength{\parskip}{\medskipamount}
+\newcommand{\@minipagerestore}{\setlength{\parskip}{\medskipamount}}
+\date{}
+\newcounter{qcounter}
+\newenvironment{q}[0]{
+    \stepcounter{qcounter}
+    \begin{enumerate}
+    \item[\arabic{qcounter}.]
+}{
+    ~
+    \end{enumerate}
+}
